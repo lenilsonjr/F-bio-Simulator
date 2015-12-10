@@ -5,3 +5,5 @@
 % caracteres
 % vogais
 % consoantes
+uma array númerica com % casas
+uma array booleana com % casas

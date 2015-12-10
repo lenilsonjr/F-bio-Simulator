@@ -115,7 +115,7 @@ function generateExercises( $num, $esp, $inst ) {
 
         }
 
-        $str = $str . ' e ';
+        $str = $str . ', ';
 
         //Geramos a instrução
         $random = [];

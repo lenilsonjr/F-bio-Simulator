@@ -1,5 +1,5 @@
-ordene
-exiba
-misture
+ordene-os
+exiba-os
+misture-os
 salve em um arquivo
-verifique se são equivalentes
+rode a bolha
