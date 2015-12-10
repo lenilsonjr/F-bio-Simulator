@@ -1,0 +1,5 @@
+ordene
+exiba
+misture
+salve em um arquivo
+verifique se são equivalentes

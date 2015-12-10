@@ -1,0 +1,7 @@
+% números
+% nomes
+% idades
+% frases
+% caracteres
+% vogais
+% consoantes
