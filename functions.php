@@ -4,11 +4,7 @@
     Copyright LenilsonJr - falecom@lenilsonjr.com & Rannyeri Rodrigues - rannyerirbatista@gmail.com
 */
 
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
-
 header('Content-type: text/html; charset=utf-8');
-date_default_timezone_set("Brazil/East");
 
 /*
     Função para exibir bordões de fábio
@@ -50,11 +46,11 @@ function generateExercises( $num, $esp, $inst ) {
 
     for ( $i = 1; $i <= $num; $i++ ) {
 
-        $imp_f  = fopen( "txt/imp.txt", "r" );
 
         $str = 'Fazer um programa que ';
 
         //Geramos o imperativo
+        $imp_f  = fopen( "txt/imp.txt", "r" );
         $random = mt_rand( 0, count( file( "txt/imp.txt" ) ) - 1 );
         $e = 0;
         while ( $line = fgets( $imp_f ) ) {
@@ -68,6 +64,7 @@ function generateExercises( $num, $esp, $inst ) {
             $e = $e + 1;
 
         }
+        fclose( $imp_f );
 
         //Geramos a especificação
         $random = [];
@@ -170,8 +167,6 @@ function generateExercises( $num, $esp, $inst ) {
         $str = str_replace( array("\n", "\r"), '', $str );
 
         $exercises[] = $str;
-
-        fclose( $imp_f );
 
     }
 

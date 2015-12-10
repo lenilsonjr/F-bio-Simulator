@@ -3,10 +3,6 @@
     Fábio Simulator
     Copyright LenilsonJr - falecom@lenilsonjr.com & Rannyeri Rodrigues - rannyerirbatista@gmail.com
 */
-
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
-
 require_once( 'functions.php' );
 ?>
 <!DOCTYPE html>
