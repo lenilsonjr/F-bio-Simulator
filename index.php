@@ -36,7 +36,7 @@ require_once( 'functions.php' );
                 </div>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><i>"<?php showSlogan(); ?>"</i></a></li>
+                    <li><a href="http://localhost"><i>"<?php showSlogan(); ?>"</i></a></li>
                     <li><img width="42px" height="42px;" src="fabio.png" alt="Fábio Feliciano" class="img-responsive center-block" /></li>
                 </ul>
 
