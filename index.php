@@ -54,11 +54,11 @@ require_once( 'functions.php' );
 
                     <div class="row">
 
-                        <div class="col-md-3">
+                        <div class="col-md-4">
 
                             <div class="form-group">
                                 <label for="exercicios">Número de exercicios a gerar:</label>
-                                <input type="number" min="1" class="form-control" name="exercicios">
+                                <input type="number" min="1" class="form-control" name="exercicios" placeholder="Digite o número de exercicios que deseja...">
                             </div>
 
                         </div>
@@ -66,7 +66,7 @@ require_once( 'functions.php' );
 
                             <div class="form-group">
                                 <label for="especificações">Número de especificações a gerar:</label>
-                                <input type="number" min="1" max="7" class="form-control" name="especificacoes">
+                                <input type="number" min="1" max="7" class="form-control" value="1" name="especificacoes" placeholder="Número de especificações que deseja...">
                             </div>
 
                         </div>
@@ -74,11 +74,11 @@ require_once( 'functions.php' );
 
                             <div class="form-group">
                                 <label for="instruções">Número de instruções a gerar:</label>
-                                <input type="number" min="1" max="5" class="form-control" name="instrucoes">
+                                <input type="number" min="1" max="5" class="form-control" value="1" name="instrucoes"  placeholder="Número de instruções que deseja...">
                             </div>
 
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-2">
 
                             <div class="form-group">
                                 <button style="margin-top: 14px;" type="submit" class="btn btn-lg center-block btn-success">GERAR!</button>
