@@ -32,12 +32,12 @@ require_once( 'functions.php' );
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="http://localhost">Fábio Simulator</a>
+                    <a class="navbar-brand" href="http://localhost"><img class="img-respinsive pull-left" style="margin-right: 10px;" height="18px" width="16px" src="sport.png" alt="Sport Recife" />IFPE Fábio Simulator</a>
                 </div>
 
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><i>"<?php showSlogan(); ?>"</i></a></li>
-                    <li><img width="42px" height="42px;" src="fabio.png" class="img-responsive center-block" /></li>
+                    <li><img width="42px" height="42px;" src="fabio.png" alt="Fábio Feliciano" class="img-responsive center-block" /></li>
                 </ul>
 
             </div><!-- /.container-fluid -->
