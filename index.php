@@ -57,7 +57,7 @@ require_once( 'functions.php' );
 
                                 <div class="form-group">
                                     <label for="exercicios">Número de exercicios a gerar:</label>
-                                    <input type="number" min="1" class="form-control" name="exercicios" placeholder="Digite o número de exercicios que deseja...">
+                                    <input type="number" min="1" class="form-control" name="exercicios" placeholder="Digite o número de exercicios que deseja..." value="10">
                                 </div>
 
                             </div>
@@ -65,7 +65,7 @@ require_once( 'functions.php' );
 
                                 <div class="form-group">
                                     <label for="especificações">Número de especificações a gerar:</label>
-                                    <input type="number" min="1" max="7" class="form-control" value="1" name="especificacoes" placeholder="Digite o número de especificações que deseja...">
+                                    <input type="number" min="2" max="7" class="form-control" value="2" name="especificacoes" placeholder="Digite o número de especificações que deseja...">
                                 </div>
 
                             </div>
@@ -73,7 +73,7 @@ require_once( 'functions.php' );
 
                                 <div class="form-group">
                                     <label for="instruções">Número de instruções a gerar:</label>
-                                    <input type="number" min="1" max="5" class="form-control" value="1" name="instrucoes"  placeholder="Número de instruções que deseja...">
+                                    <input type="number" min="2" max="5" class="form-control" value="2" name="instrucoes"  placeholder="Número de instruções que deseja...">
                                 </div>
 
                             </div>
