@@ -32,11 +32,11 @@ require_once( 'functions.php' );
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Fábio Simulator</a>
+                    <a class="navbar-brand" href="http://localhost">Fábio Simulator</a>
                 </div>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><i><?php showSlogan(); ?></i></a></li>
+                    <li><a href="#"><i>"<?php showSlogan(); ?>"</i></a></li>
                 </ul>
 
             </div><!-- /.container-fluid -->
