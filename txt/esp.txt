@@ -7,3 +7,5 @@
 % consoantes
 uma array númerica com % casas
 uma array booleana com % casas
+uma array númerica multidimensional %x%
+uma array booelana multidimensional %x%
