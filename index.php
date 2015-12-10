@@ -37,6 +37,7 @@ require_once( 'functions.php' );
 
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><i>"<?php showSlogan(); ?>"</i></a></li>
+                    <li><img width="42px" height="42px;" src="fabio.png" class="img-responsive center-block" /></li>
                 </ul>
 
             </div><!-- /.container-fluid -->
@@ -44,54 +45,54 @@ require_once( 'functions.php' );
 
         <div class="container">
 
-            <div class="jumbotron">
-
                 <?php
                 if ( !isset ( $_REQUEST[ 'exercicios' ] ) ) {
                 ?>
+                <div class="jumbotron" style="margin-top: 160px;">
+                    <form id="formGerarProgramas" method="post">
 
-                <form id="formGerarProgramas" method="post">
+                        <div class="row">
 
-                    <div class="row">
+                            <div class="col-md-4">
 
-                        <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="exercicios">Número de exercicios a gerar:</label>
+                                    <input type="number" min="1" class="form-control" name="exercicios" placeholder="Digite o número de exercicios que deseja...">
+                                </div>
 
-                            <div class="form-group">
-                                <label for="exercicios">Número de exercicios a gerar:</label>
-                                <input type="number" min="1" class="form-control" name="exercicios" placeholder="Digite o número de exercicios que deseja...">
+                            </div>
+                            <div class="col-md-3">
+
+                                <div class="form-group">
+                                    <label for="especificações">Número de especificações a gerar:</label>
+                                    <input type="number" min="1" max="7" class="form-control" value="1" name="especificacoes" placeholder="Digite o número de especificações que deseja...">
+                                </div>
+
+                            </div>
+                            <div class="col-md-3">
+
+                                <div class="form-group">
+                                    <label for="instruções">Número de instruções a gerar:</label>
+                                    <input type="number" min="1" max="5" class="form-control" value="1" name="instrucoes"  placeholder="Número de instruções que deseja...">
+                                </div>
+
+                            </div>
+                            <div class="col-md-2">
+
+                                <div class="form-group">
+                                    <button style="margin-top: 14px;" type="submit" class="btn btn-lg center-block btn-success">GERAR!</button>
+                                </div>
+
                             </div>
 
                         </div>
-                        <div class="col-md-3">
-
-                            <div class="form-group">
-                                <label for="especificações">Número de especificações a gerar:</label>
-                                <input type="number" min="1" max="7" class="form-control" value="1" name="especificacoes" placeholder="Número de especificações que deseja...">
-                            </div>
-
-                        </div>
-                        <div class="col-md-3">
-
-                            <div class="form-group">
-                                <label for="instruções">Número de instruções a gerar:</label>
-                                <input type="number" min="1" max="5" class="form-control" value="1" name="instrucoes"  placeholder="Número de instruções que deseja...">
-                            </div>
-
-                        </div>
-                        <div class="col-md-2">
-
-                            <div class="form-group">
-                                <button style="margin-top: 14px;" type="submit" class="btn btn-lg center-block btn-success">GERAR!</button>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </form>
-
+                    </form>
+                </div>
                 <?php
                 } else {
-
+                ?>
+                <div class="jumbotron">
+                <?php
                     $exercises = generateExercises( $_REQUEST['exercicios'], $_REQUEST['especificacoes'], $_REQUEST['instrucoes'] );
 
                     foreach ( $exercises as $exercise ) {
@@ -106,20 +107,20 @@ require_once( 'functions.php' );
                     }
 
                 ?>
-                <div class="row">
+                    <div class="row">
 
-                    <div class="pull-left">
+                        <div class="pull-left">
 
-                        <a href="http://localhost" type="button" class="btn btn-lg btn-danger"> < VOLTAR</a>
+                            <a href="http://localhost" type="button" class="btn btn-lg btn-danger"> < VOLTAR</a>
+
+                        </div>
 
                     </div>
-
                 </div>
                 <?php
                 }
                 ?>
 
-            </div>
 
         </div>
 
